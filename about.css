@@ -1,0 +1,26 @@
+#services{
+    background-color: var(--bg-color-2);
+}
+#services .animate-bar::before{
+    border-color: var(--bg-color-2);
+}
+.service-card .card-content{
+    width: 22rem;
+    padding: 55px 40px;
+    margin: 15px;
+    background-color: #131416;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    transition: all 0.3s ease-in;
+}
+.service-card .card-content:hover{
+    transform: translateY(-5%);
+    background-color: #1a1a1a;
+}
+.service-card .card-content i{
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.service-card .card-content h5{
+    margin-bottom: 10px;
+}

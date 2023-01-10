@@ -1,0 +1,50 @@
+#resume{
+    background-color: var(--bg-color-1);
+}
+#resume .container{
+    gap: 2rem;
+}
+#resume .animate-bar::before{
+    border-color: var(--bg-color-1);
+}
+#resume .title{
+    margin-bottom: 10px;
+}
+.resume-item{
+    /* width: 35rem; */
+    padding: 32px 40px;
+    background-color: #191a20;
+    border-left: 2px solid var(--main-color);
+    position: relative;
+    border-bottom: 1px solid #313131;
+}
+.resume-item:last-child{
+    border-bottom: none;
+}
+.resume-item .item-arrow{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 2.5rem;
+    background-color: var(--main-color);
+}
+.resume-item .item-arrow::after{
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    left: 16px;
+    border-left-color: var(--main-color);
+}
+#skills{
+    padding-bottom: 100px;
+}
+#skills .heading-wrapper{
+    padding-top: 50px;
+}
+h4{
+    color: aqua;
+}
+h5{
+    color: aquamarine;
+}

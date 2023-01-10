@@ -1,0 +1,78 @@
+#contact{
+    background-color: var(--bg-color-1);
+}
+#contact .animate-bar::before{
+    border-color: var(--bg-color-1);
+}
+#contact .container{
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+#contact form{
+    width: 50%;
+}
+form .form-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.form-row .input-data{
+    width: 50%;
+    display: block;
+}
+.input-data input, textarea{
+    background-color: #1c1d24;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    font-size: 17px;
+    margin-top: 20px;
+    transition: border-bottom-color 0.3s ease;
+}
+.input-data textarea{
+    padding: 10px 10px 120px;
+}
+.input-data input:focus, textarea:focus{
+    border-bottom-color: var(--main-color);
+}
+#contact .contact-info{
+    width: 40%;
+}
+#contact .contact-list{
+    list-style: none;
+    padding-top: 20px;
+}
+.contact-list .list-item{
+    display: flex;
+    align-items: center;
+}
+.contact-list .list-item .icon i{
+    font-size: 30px;
+    padding-right: 20px;
+    color: var(--main-color);
+}
+.contact-list .list-item .details{
+    padding: 15px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid #878e99;
+    line-height: 22px;
+}
+.contact-list .list-item .details label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact-list .list-item .details p{
+    font-size: 15px;
+}
+
+@media (max-width: 850px){
+#contact .contact-info, #contact form {
+    width: 40rem;
+}
+}
